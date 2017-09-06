@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+AUTOR: Juan Ignacio Monroy Gonzalez 5IM6
+VERSIÓN: 1.0 
+DESCRIPCIÓN: Primer ejemplo para uso de servlets
+COMPILACIÓN: Se compila en tiempo de ejecución. 
+EJECUCIÓN: Ejecutando la pagina con GlashFish.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Hola</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <!--Formulario que enviara un request al servidor-->
         <form name="formulario" action="http://localhost:8084/servlets/Hello" method="get" target="principal" >
+            <!--Boton que envia el request, es procesado en el paquete: HolaMundo.Hello.java-->
             <input type="submit" name="Enviar"  value="Enviar">
         </form>
     </body>
